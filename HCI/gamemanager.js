@@ -5,6 +5,7 @@ function initialize(){
 
 function startGame(){
     document.getElementById("score").style.display = 'block';
+    document.getElementById("selectCountry").style.display = 'block';
     document.getElementById("playbutton").style.display = 'none';
     document.getElementById("canadaButton").style.display = 'block';
     document.getElementById("brazilButton").style.display = 'block';
@@ -13,13 +14,6 @@ function startGame(){
 
 function startCanada(){
     document.getElementById("brazilButton").style.display = 'none';
-    document.getElementById("southAfricaButton").style.display = 'none';
-}
-
-function CNTower(){
-    
-}
-
-function startCanada(){
-
+    document.getElementById("selectCountry").textContent = "Your first destination is CN Tower";
+    document.getElementById("canadaButton").style.display = 'none';
 }
