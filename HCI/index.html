@@ -23,22 +23,24 @@
         -->
         <p></p>
 
-        <div id="scoreGroup" style="display:none">
+        <div id="scoreGroup" style="display:none; text-align:center">
             <h2 class="scoreElement" id="score">Score: </h2>
             <h2 class="scoreElement" id="scoreVal"></h2>
         </div>
 
         <div class="triviaQuestion" id="cnTowerQuestion" style="display:none">
             <h1>What is this geographic landmark?</h1>
-            <h2 class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(1)">CN Tower</h2>
-            <h2 class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(0)">Peace Tower</h2>
+            <img src="explore-cn-tower .jpg" style="text-align:center; margin:auto; width: 500px">
+            <p></p>
+            <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(1)">CN Tower</h2>
+            <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(0)">Peace Tower</h2>
         </div>
 
-        <div class="resultDisplay" id="correctDisplay" style="display:none">
+        <div class="resultDisplay" id="correctDisplay" style="display:none; text-align:center">
             <h1>Correct!</h1>
         </div>
 
-        <div class="resultDisplay" id="incorrectDisplay" style="display:none">
+        <div class="resultDisplay" id="incorrectDisplay" style="display:none; text-align:center">
             <h1>Incorrect!</h1>
         </div>
 
