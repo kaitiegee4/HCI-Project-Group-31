@@ -22,3 +22,23 @@
     margin: auto;
     display: flex;
 }
+
+.triviaOption{
+    display: inline-block;
+    padding: 20px;
+    text-align: center
+}
+
+.triviaQuestion{
+    text-align: center;
+}
+
+.scoreGroup{
+    text-align: center;
+}
+
+.scoreElement{
+    display: inline-block;
+    padding: 20px;
+    text-align: center
+}

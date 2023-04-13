@@ -22,10 +22,25 @@
         <button class="countryButton" id="southAfricaButton" style="display:none" onclick="startSAfrica()">South Africa</button>
         -->
         <p></p>
-        <h2 id="score" style="display:none">Score: </h2>
 
+        <div id="scoreGroup" style="display:none">
+            <h2 class="scoreElement" id="score">Score: </h2>
+            <h2 class="scoreElement" id="scoreVal"></h2>
+        </div>
 
-        <h2 id="niagaraFallsTitle"
+        <div class="triviaQuestion" id="cnTowerQuestion" style="display:none">
+            <h1>What is this geographic landmark?</h1>
+            <h2 class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(1)">CN Tower</h2>
+            <h2 class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(0)">Peace Tower</h2>
+        </div>
+
+        <div class="resultDisplay" id="correctDisplay" style="display:none">
+            <h1>Correct!</h1>
+        </div>
+
+        <div class="resultDisplay" id="incorrectDisplay" style="display:none">
+            <h1>Incorrect!</h1>
+        </div>
 
     </body>
 </html>
