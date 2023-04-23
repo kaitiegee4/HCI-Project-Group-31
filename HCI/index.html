@@ -13,6 +13,11 @@
         <h1 class="title">Landmark Master</h1>
         <button id="playbutton" onclick="startGame()">Click to Begin!</button>
         <h2 class="Instruction" id="selectCountry" style="display:none">Select a Country!</h2>
+        <!--
+        <h2 class="Instruction" id="selectLocation" style="display:none">Select a Location!</h2
+            ^^ alternatively, we could randomize the questions? Location allows for broader options though.
+            Could we have a randomizer that removes options from the list so it can rotate through all of the questions?
+        -->
 
         <button class="countryButton" id="canadaButton" style="display:none" onclick="startCanada()">Canada</button>
         <p></p>
@@ -28,13 +33,73 @@
             <h2 class="scoreElement" id="scoreVal"></h2>
         </div>
 
+        <!-- the questions -->
+
         <div class="triviaQuestion" id="cnTowerQuestion" style="display:none">
             <h1>What is this geographic landmark?</h1>
-            <img src="explore-cn-tower .jpg" style="text-align:center; margin:auto; width: 500px">
+            <img class="triviaPhoto" src="photos/cn-tower-photo.jpg">
             <p></p>
             <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(1)">CN Tower</h2>
             <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(0)">Peace Tower</h2>
         </div>
+
+        <div class="triviaQuestion" id="grandTsingyQuestion" style="display:none">
+            <h1>What is this geographic landmark?</h1>
+            <img class="triviaPhoto" src="photos/grand-tsingy-photo.jpg">
+            <p></p>
+            <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(0)">Badlands National Park, USA</h2>
+            <button class="triviaOption" id="cnTowerAnswer" onclick="resultScreen(1)">Grand Tsingy, Madagascar</h2>
+        </div>
+
+        <div class="triviaQuestion" id="mountKilimanjaroQuestion" style="display:none">
+            <h1>What is this geographic landmark?</h1>
+            <img class="triviaPhoto" src="photos/mount-kilimanjaro-photo.jpg">
+            <p></p>
+            <button class="triviaOption" id="mountKilimanjaroAnswer" onclick="resultScreen(0)">Mount Fuji, Japan</h2>
+            <button class="triviaOption" id="mountKilimanjaroAnswer" onclick="resultScreen(1)">Mount Kilimanjaro, Tanzania</h2>
+        </div>
+
+        <div class="triviaQuestion" id="borobudurQuestion" style="display:none">
+            <h1>What is this geographic landmark?</h1>
+            <img class="triviaPhoto" src="photos/borobudur-photo.jpg">
+            <p></p>
+            <button class="triviaOption" id="borobudurAnswer" onclick="resultScreen(0)">Borobudur Temple, Indonesia</h2>
+            <button class="triviaOption" id="borobudurAnswer" onclick="resultScreen(1)">Jade Buddha Temple, China</h2>
+        </div>
+
+        <div class="triviaQuestion" id="newYorkQuestion" style="display:none">
+            <h1>Which location is depicted in the map below?</h1>
+            <img class="triviaPhoto" src="photos/new-york-map.png">
+            <p></p>
+            <button class="triviaOption" id="newYorkAnswer" onclick="resultScreen(1)">New York, New York</h2>
+            <button class="triviaOption" id="newYorkAnswer" onclick="resultScreen(0)">New Haven, Connecticut</h2>
+        </div>
+
+        <div class="triviaQuestion" id="sanFranciscoQuestion" style="display:none">
+            <h1>Which location is depicted in the map below?</h1>
+            <img class="triviaPhoto" src="photos/san-francisco-bay-map.png">
+            <p></p>
+            <button class="triviaOption" id="sanFranciscoAnswer" onclick="resultScreen(0)">Sydney Harbor, Australia</h2>
+            <button class="triviaOption" id="sanFranciscoAnswer" onclick="resultScreen(1)">San Francisco Bay, California</h2>
+        </div>
+
+        <div class="triviaQuestion" id="thailandQuestion" style="display:none">
+            <h1>Which location is depicted in the map below?</h1>
+            <img class="triviaPhoto" src="photos/thailand-map.jpg">
+            <p></p>
+            <button class="triviaOption" id="thailandAnswer" onclick="resultScreen(0)">Singapore</h2>
+            <button class="triviaOption" id="thailandAnswer" onclick="resultScreen(1)">Thailand</h2>
+        </div>
+
+        <div class="triviaQuestion" id="denmarkQuestion" style="display:none">
+            <h1>Which location is depicted in the map below?</h1>
+            <img class="triviaPhoto" src="photos/denmark-map.jpg">
+            <p></p>
+            <button class="triviaOption" id="denmarkAnswer" onclick="resultScreen(1)">Denmark</h2>
+            <button class="triviaOption" id="denmarkAnswer" onclick="resultScreen(0)">Ukraine</h2>
+        </div>
+
+        <!-- the results -->
 
         <div class="resultDisplay" id="correctDisplay" style="display:none; text-align:center">
             <h1>Correct!</h1>
