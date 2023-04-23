@@ -1,12 +1,19 @@
 body{
-    background-color: #0096FF;
+    background-color: #a2dbf1;
 }
 
 .title{
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .Instruction{
+    text-align: center;
+}
+
+.textBlock{
     text-align: center;
 }
 
