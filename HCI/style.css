@@ -1,19 +1,19 @@
-body{
-    background-color: #a2dbf1;
-}
-
 .title{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 100%;
+}
+
+#rightside{
+    background-color: limegreen;
+}
+
+#leftside{
+    background-color: yellow;
 }
 
 .Instruction{
-    text-align: center;
-}
-
-.textBlock{
     text-align: center;
 }
 
@@ -34,28 +34,115 @@ body{
     display: flex;
 }
 
-.triviaPhoto{
-    text-align:center; 
-    margin:auto; 
-    width: 500px
-}
-
 .triviaOption{
     display: inline-block;
     padding: 20px;
-    text-align: center
+    text-align: center;
+    border: none;
 }
+
+#rightOption:hover{
+    background-color: limegreen;
+}
+
+#leftOption:hover{
+    background-color: yellow;
+}
+
 
 .triviaQuestion{
     text-align: center;
+    font-size: 40px;
 }
 
 .scoreGroup{
-    text-align: center;
+    text-align: right;
+}
+
+.questionsRemaining{
+    text-align: right;
 }
 
 .scoreElement{
     display: inline-block;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
+}
+
+img {
+    display: block;
+    /* min-width: 40%;
+    max-width: 50%;
+    max-height: 50%; */
+    height: 500px;
+    /* height: auto; */
+}
+
+.leftContainer, .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* border:1px solid black; */
+}
+
+.optionsContainer {
+    /* flex-direction: row;
+    /* height: 60vh; */
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.topBarContainer{
+    height:50%;
+    display:flex;
+    text-align: justify;
+    /* flex-direction: row; */
+}
+
+.timerDiv{
+    display: flex;
+    /* flex: 1; */
+    width: 25%;
+    font-size: 20px;
+    background-color: aqua;
+}
+
+.questionPlaceholder{
+    display: flex;
+    /* flex: 1; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.questionsAndScore{
+    display: flex;
+    /* flex: 1; */
+    width: 25%
+
+}
+
+.triviaOption{
+    font-size: 50px;
+}
+
+#gameModeSelect{
+    height: 25%;
+}
+
+.continueButton{
+    font-size: 50px;
+    border: 0px;
+}
+
+#timer{
+    font-size: 70px;
+}
+
+#questionsAndScore{
+    font-size: 35px;
 }
