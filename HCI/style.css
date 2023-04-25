@@ -1,8 +1,22 @@
-.title{
-    display: block;
+/* --- general --- */
+.playButton{
+    text-align: center;
     margin-left: auto;
+    font-size: 80px;
     margin-right: auto;
-    max-width: 100%;
+    padding: 3%;
+    max-width: fit-content;
+    display: flex;
+    background-color: white;
+    border: none;
+    border-radius: 500px;
+    transition: 1s;
+    /* set transition to however long the
+    arm needs to be up to start */
+}
+
+.playButton:hover{
+    background-color: aqua;
 }
 
 #rightside{
@@ -13,32 +27,86 @@
     background-color: yellow;
 }
 
-.Instruction{
-    text-align: center;
-}
-
-#playbutton{
-    text-align: center;
-    margin: auto;
-    display: flex;
-}
-
 #score{
     text-align: center;
     margin: auto;
 }
 
-.countryButton{
+#gameModeSelect{
+    height: 25%;
+}
+/* END general */
+
+/* --- title page --- */
+.title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+/* END title page */
+
+/* --- instructions --- */
+.Instruction{
     text-align: center;
-    margin: auto;
-    display: flex;
 }
 
-.triviaOption{
-    display: inline-block;
-    padding: 20px;
-    text-align: center;
+#instructionOption{
+    display: flex; 
+    text-align: justify;
+    border: 1px solid black;
+}
+
+.optionBox {
+    width: 50%; 
+    display: flex; 
+    justify-content:center; 
+    align-items: center; 
     border: none;
+}
+/* END instructions */
+
+/* --- trivia questions --- */
+.questionPlaceholder{
+    display: flex;
+    /* flex: 1; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.triviaQuestion{
+    text-align: center;
+    font-size: 40px;
+}
+
+img {
+    display: block;
+    /* min-width: 40%;
+    max-width: 50%;
+    max-height: 50%; */
+    height: 500px;
+    /* height: auto; */
+}
+/* END trivia questions */
+
+/* --- trivia answers ---*/
+.optionsContainer {
+    /* flex-direction: row;
+    /* height: 60vh; */
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.leftContainer, .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* border:1px solid black; */
 }
 
 #rightOption:hover{
@@ -49,12 +117,20 @@
     background-color: yellow;
 }
 
-
-.triviaQuestion{
+.triviaOption{
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    border: none;
+    border-radius: 500px;
+    padding: 5%;
+    transition: 1s;
 }
+/* END trivia answers */
 
+/* --- top bar --- */
 .scoreGroup{
     text-align: right;
 }
@@ -69,35 +145,9 @@
     text-align: center;
 }
 
-img {
-    display: block;
-    /* min-width: 40%;
-    max-width: 50%;
-    max-height: 50%; */
-    height: 500px;
-    /* height: auto; */
-}
-
-.leftContainer, .rightContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50%;
-    /* border:1px solid black; */
-}
-
-.optionsContainer {
-    /* flex-direction: row;
-    /* height: 60vh; */
-    width: 100%;
-    height: 50%;
-    border: 1px solid black;
-}
-
 .topBarContainer{
-    height:50%;
-    display:flex;
+    height: 50%;
+    display: flex;
     text-align: justify;
     /* flex-direction: row; */
 }
@@ -107,36 +157,15 @@ img {
     /* flex: 1; */
     width: 25%;
     font-size: 20px;
-    background-color: aqua;
-}
-
-.questionPlaceholder{
-    display: flex;
-    /* flex: 1; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 50%
 }
 
-.questionsAndScore{
-    display: flex;
-    /* flex: 1; */
-    width: 25%
-
-}
-
-.triviaOption{
-    font-size: 50px;
-}
-
-#gameModeSelect{
-    height: 25%;
-}
-
-.continueButton{
-    font-size: 50px;
-    border: 0px;
+.timer {
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;  
 }
 
 #timer{
@@ -145,4 +174,9 @@ img {
 
 #questionsAndScore{
     font-size: 35px;
+}
+
+.continueButton{
+    font-size: 50px;
+    border: 0px;
 }

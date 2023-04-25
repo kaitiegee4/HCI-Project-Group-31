@@ -14,7 +14,9 @@
         <!--TITLE PAGE-->
         <div id="titlePage">
             <img class="title" src="photos/geography-genius-highres.PNG">
-            <button id="playbutton" onclick="displayInstructions()" style="font-size: 80px">Raise one arm to begin!</button>
+            <div id="buttonbox">
+                <button class="playButton" onclick="displayInstructions()">Raise one arm to begin!</button>
+            </div>
         </div>
 
             <!-- <h2 class="Instruction" id="selectCountry" style="display:none">Choose your Trivia Topic!</h2>
@@ -40,12 +42,12 @@
                 Quit to the main menu at any time by walking away from the display.
             </h4>
 
-            <div style="border: 1px solid black; display:flex; text-align: justify">
-                <div style="width: 50%; display:flex; justify-content:center; align-items:center; border: 1px solid black">
+            <div id="instructionOption">
+                <div class="optionBox">
                     <button class="triviaOption" id="leftOption" onclick="startTrivia(1)">Identifying Landmarks</h2>
                     <h5>Extend your left arm to select!</h5>
                 </div>
-                <div style="width: 50%; display:flex; justify-content:center; align-items:center; border: 1px solid black">
+                <div class="optionBox">
                     <button class="triviaOption" id="rightOption" onclick="startTrivia(2)">Identifying Maps</h2>    
                     <h5>Extend your right arm to select!</h5>     
                 </div>                    
@@ -70,17 +72,17 @@
                 </div>
                 <div class="triviaQuestion" id="madagascarQuestion" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/grand-tsingy-photo.jpg" style="text-align:center; margin:auto">
+                    <img src="grandtsingy.png" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="tanzaniaQuestion" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/mount-kilimanjaro-photo.jpg" style="text-align:center; margin:auto">
+                    <img src="mountk.jpg" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="indonesiaQuestion" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/borobudur-photo.jpg" style="text-align:center; margin:auto">
+                    <img src="temple.jpg" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="easterIslandQuestion" style="display:none">
@@ -101,17 +103,17 @@
                 </div>
                 <div class="triviaQuestion" id="denmarkMap" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/denmark-map.jpg" style="text-align:center; margin:auto">
+                    <img src="denmarkMap.png" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="thailandMap" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/thailand-map.jpg" style="text-align:center; margin:auto">
+                    <img src="thailandMap.jpg" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="SFMap" style="display:none">
                     <h1 class="questionText">What is this geographic landmark?</h1>
-                    <img src="photos/san-francisco-bay-map.png" style="text-align:center; margin:auto">
+                    <img src="SFBayMap.png" style="text-align:center; margin:auto">
                     <p></p>
                 </div>
                 <div class="triviaQuestion" id="BostonMap" style="display:none">
@@ -341,12 +343,12 @@
 
         <div class="resultDisplay" id="correctDisplay" style="display:none; text-align:center">
             <!-- <h1>Correct!</h1> -->
-            <button class="continueButton" onClick="loadQuestion()">Raise one arm to continue</button>
+            <button class="playButton" id="continueButton" onClick="loadQuestion()">Raise one arm to continue</button>
         </div>
 
         <div class="resultDisplay" id="incorrectDisplay" style="display:none; text-align:center">
             <!-- <h1>Incorrect!</h1> -->
-            <button class="continueButton" onClick="loadQuestion()">Raise one arm to continue</button>
+            <button class="playButton" id="continueButton" onClick="loadQuestion()">Raise one arm to continue</button>
         </div>
 
         <!--Final Results Screen-->
@@ -354,7 +356,7 @@
             <h1 style="font-size: 50px">Congratulations! You completed the game!</h1>
             <h1 style="font-size: 50px">View your final score above!</h1>
 
-            <button onclick="initialize()" style="font-size:50px">Raise One Arm to Continue</button>
+            <button onclick="initialize()" class="playButton">Raise One Arm to Continue</button>
         </div>
 
         <h1 id="inputtest">Hello!</h1>
